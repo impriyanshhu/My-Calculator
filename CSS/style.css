@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100vh;
+    background:
+        /* top, transparent black, faked with gradient */
+        linear-gradient(rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)),
+        /* bottom, image */
+        url(../Img/bg.jpg);
+    background-size: cover;
+}
+
+#heading{
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+#calculator {
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    padding: 15px 0;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#display {
+    height: 35px;
+    font-size: 35px;
+    width: 265px;
+    text-align: right;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+}
+
+#display::placeholder {
+    color: black;
+}
+
+.btn {
+    margin: 5px;
+    border: none;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    font-size: 23px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.operation {
+    color: green;
+}
+
+.result {
+    background-color: orange;
+    color: aliceblue;
+}
+
+
+/*  --------------------- Media Query --------------- */
+
+@media screen and (max-width : 426px){
+
+    #heading{
+        font-size: 18px;
+    }
+
+    #calculator{
+        width: 230px;
+        gap: 0;
+
+    }
+
+    #display{
+        height: 20px;
+        font-size: 30px;
+        width: 185px;
+        margin-bottom: 10px;
+    }
+
+    .btn{
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}

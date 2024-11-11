@@ -9,42 +9,66 @@
 </head>
 
 <body>
-    <div id="heading">
-        <h1>Calculator</h1>
+
+    <div id="box">
+
+        <div id="calculator">
+            <div class="container">
+                <input type="text" placeholder="0" id="display" disabled>
+                <div class="row">
+                    <button class="btn operation">AC</button>
+                    <button class="btn operation">DEL</button>
+                    <button class="btn operation">%</button>
+                    <button class="btn operation">/</button>
+                </div>
+                <div class="row">
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn operation">*</button>
+                </div>
+                <div class="row">
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn operation">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn operation">+</button>
+                </div>
+                <div class="row">
+                    <button class="btn">00</button>
+                    <button class="btn">0</button>
+                    <button class="btn">.</button>
+                    <button class="btn result">=</button>
+                </div>
+        
+            </div>
+        </div>
+
+        <div id="bmi">
+            <div class="container">
+                <div class="heading">BMI Calculator</div>
+                <div class="height">
+                    <p class="sub-heading">Height <span class="small">(in cm)</span></p>
+                    <input type="number" id="height">
+                </div>
+                <div class="weight">
+                    <p class="sub-heading">Weight <span class="small">(in Kg)</span></p>
+                    <input type="number" id="weight">
+                </div>
+                <button id="bmi-btn">Calculate</button>
+                <div class="show">
+                    Category <br> Your BMI here...
+                </div>
+            </div>
+        </div>
+        
     </div>
-    <div id="calculator">
-        <input type="text" placeholder="0" id="display">
-        <div class="row">
-            <button class="btn operation">AC</button>
-            <button class="btn operation">DEL</button>
-            <button class="btn operation">%</button>
-            <button class="btn operation">/</button>
-        </div>
-        <div class="row">
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn operation">*</button>
-        </div>
-        <div class="row">
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn operation">-</button>
-        </div>
-        <div class="row">
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn operation">+</button>
-        </div>
-        <div class="row">
-            <button class="btn">00</button>
-            <button class="btn">0</button>
-            <button class="btn">.</button>
-            <button class="btn result">=</button>
-        </div>
-    </div>
+
 
     <script src="JavaScript/script.js"></script>
 </body>
